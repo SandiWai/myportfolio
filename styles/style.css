@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css?family=Inria+Serif&display=swap");
+body {
+  margin: auto;
+  width: 90%;
+  font-family: "Inria Serif", serif;
+  color: #3b474b; }
+
+header {
+  width: 30%;
+  height: 100vh;
+  float: left; }
+  header img {
+    display: block;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 150px;
+    border: 3px dashed #ad4040;
+    border-radius: 50%; }
+  header h1 {
+    margin-top: 50px;
+    text-align: center;
+    color: #172135; }
+  header .contact {
+    text-align: center; }
+    header .contact i {
+      font-size: 25px; }
+  header ul {
+    list-style: none; }
+    header ul li {
+      padding-top: 20px;
+      text-align: center;
+      margin-left: -30px; }
+  header .nav a, header .contact a {
+    text-decoration: none;
+    color: #3b474b;
+    font-size: 18px;
+    border-bottom: 1px dashed #ad4040; }
+  header .contact a {
+    border: none;
+    color: #ad4040; }
+  header .nav a:hover {
+    border-color: #ffa600; }
+
+h2 {
+  width: 100%;
+  display: inline-block;
+  color: #172135;
+  border-bottom: 2px solid #3b474b; }
+
+.contents {
+  width: 70%;
+  height: 100vh;
+  float: left;
+  overflow: scroll;
+  scroll-behavior: smooth; }
+
+.contents::-webkit-scrollbar {
+  display: none; }
+
+.description {
+  padding: 20px; }
+
+.skills {
+  padding: 20px; }
+  .skills .skill {
+    margin: 10px;
+    padding: 10px 10px 10px 40px;
+    background: #ad4040;
+    border-radius: 20px;
+    color: white; }
+
+.education {
+  padding: 20px; }
+  .education .edu {
+    background: #dadada;
+    margin: 8px;
+    padding: 10px;
+    float: left;
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.5); }
+    .education .edu i {
+      display: block;
+      text-align: center;
+      font-size: 40px;
+      color: #ad4040; }
+    .education .edu span {
+      display: block;
+      font-size: 20px;
+      padding-top: 30px; }
+    .education .edu .pending,
+    .education .edu .completed {
+      padding: 10px 0 10px 0; }
+    .education .edu .completed {
+      color: green;
+      font-weight: bold; }
+    .education .edu .pending {
+      color: #aaff00;
+      font-weight: bold; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css?family=Inria+Serif&display=swap");
+
+$primary: rgb(173, 64, 64);
+$fontblack: rgb(59, 71, 75);
+$fonttitle: rgb(23, 33, 53);
+$fontwhite: rgb(255, 255, 255);
+
+body {
+  margin: auto;
+  width: 90%;
+  font-family: "Inria Serif", serif;
+  color: $fontblack;
+}
+
+header {
+  width: 30%;
+  height: 100vh;
+  float: left;
+  img {
+    display: block;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 150px;
+    border: 3px dashed $primary;
+    border-radius: 50%;
+  }
+  h1 {
+    margin-top: 50px;
+    text-align: center;
+    color: $fonttitle;
+  }
+  .contact{
+      text-align: center;
+      i{
+          font-size: 25px;
+      }
+  }
+  ul {
+    list-style: none;
+    li {
+      padding-top: 20px;
+      text-align: center;
+      margin-left: -30px;
+    }
+  }
+  .nav a,.contact a {
+    text-decoration: none;
+    color: $fontblack;
+    font-size: 18px;
+    border-bottom: 1px dashed $primary;
+  }
+  .contact a{
+      border: none;
+      color: $primary;
+  }
+  .nav a:hover {
+    border-color: rgb(255, 166, 0);
+  }
+}
+
+h2 {
+  width: 100%;
+  display: inline-block;
+  color: $fonttitle;
+  border-bottom: 2px solid $fontblack;
+}
+
+.contents {
+  width: 70%;
+  height: 100vh;
+  float: left;
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+.contents::-webkit-scrollbar {
+  display: none;
+}
+
+.description {
+  padding: 20px;
+}
+
+.skills {
+  padding: 20px;
+  .skill {
+    margin: 10px;
+    padding: 10px 10px 10px 40px;
+    background: $primary;
+    border-radius: 20px;
+    color: $fontwhite;
+  }
+}
+
+.education {
+  padding: 20px;
+  .edu {
+    background: rgb(218, 218, 218);
+    margin: 8px;
+    padding: 10px;
+    float: left;
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.5);
+    i {
+      display: block;
+      text-align: center;
+      font-size: 40px;
+      color: $primary;
+    }
+    span {
+      display: block;
+      font-size: 20px;
+      padding-top: 30px;
+    }
+    .pending,
+    .completed {
+      padding: 10px 0 10px 0;
+    }
+    .completed {
+      color: green;
+      font-weight: bold;
+    }
+    .pending {
+      color: rgb(170, 255, 0);
+      font-weight: bold;
+    }
+  }
+}
