@@ -61,20 +61,43 @@ h2 {
 
 .description {
   padding: 20px; }
+  .description .timeline h3 {
+    font-size: 18px;
+    color: black; }
+  .description .timeline .event {
+    margin-top: 20px; }
+    .description .timeline .event .circle {
+      width: 10px;
+      height: 10px;
+      display: inline-block;
+      border: 2px solid #ad4040;
+      border-radius: 10px; }
+    .description .timeline .event .text {
+      padding-left: 20px; }
+    .description .timeline .event .time {
+      display: block;
+      margin-left: 35px;
+      color: #ad4040;
+      font-weight: bold; }
 
 .skills {
-  padding: 20px; }
+  padding: 20px;
+  display: none; }
   .skills .skill {
     margin: 10px;
     padding: 10px 10px 10px 40px;
     background: #ad4040;
     border-radius: 20px;
-    color: white; }
+    color: white;
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.5); }
+    .skills .skill i {
+      padding-right: 10px; }
 
 .education {
-  padding: 20px; }
+  padding: 20px;
+  display: none; }
   .education .edu {
-    background: #dadada;
+    background: white;
     margin: 8px;
     padding: 10px;
     float: left;

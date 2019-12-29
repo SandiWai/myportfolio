@@ -24,19 +24,53 @@
             </a>
         </div>
         <ul>
-            <li class="nav"><a href="#description">home</a></li>
-            <li class="nav"><a href="#skills">skills</a></li>
-            <li class="nav"><a href="#education">education</a></li>
+            <li class="nav"><a id="descriptionBtn" href="#">home</a></li>
+            <li class="nav"><a id="skillBtn" href="#">skills</a></li>
+            <li class="nav"><a id="educationBtn" href="#">education</a></li>
         </ul>
     </header>
 
     <div class="contents">
         <section id="description" class="description" data-section="description">
-            <h2>About</h2>
-            <p>Eu ex minim deserunt Lorem laborum ipsum eu magna est ad esse incididunt reprehenderit labore.
-                Officia ipsum ut sint elit eu et magna aliqua labore eu occaecat enim sit non.
-                Ullamco amet elit proident ex dolor consectetur aliquip elit laborum nisi officia ad.
+            <h2>အကြောင်းအရာအကျဥ်း</h2>
+            <p>
+                မကြာသေးမှီက B.C.Sc ဖြင့်ကျောင်းပီးထားသော fresh graduate တစ်ယောက်ဖြစ်ပါတယ်။<br>
+                Web development ကိုစိတ်ပါဝင်စားပီး အသစ်သစ်သောနည်းပညာများကို အဆက်မပြတ်လေ့လာ နေပါတယ်။<br>
+                အသင်းအဖွဲ့များတွင် တက်ကြွစွာပူးပေါင်းလုပ်ဆောင်နိုင်သေးတယ်။
             </p>
+            <div class="timeline">
+                <h3>၂၀၁၄-၂၀၁၉</h3>
+                <div class="event">
+                    <div class="circle"></div>
+                    <span class="text">University of Computer Studies တွင်စတင်ပညာသင်ကြားခဲ့</span>
+                    <spam class="time">၂၀၁၄</spam>
+                </div>
+                <div class="event">
+                    <div class="circle"></div>
+                    <span class="text">University of Computer Studies တွင်စတင်ပညာသင်ကြားခဲ့</span>
+                    <spam class="time">၂၀၁၄</spam>
+                </div>
+                <div class="event">
+                    <div class="circle"></div>
+                    <span class="text">University of Computer Studies တွင်စတင်ပညာသင်ကြားခဲ့</span>
+                    <spam class="time">၂၀၁၄</spam>
+                </div>
+                <div class="event">
+                    <div class="circle"></div>
+                    <span class="text">University of Computer Studies တွင်စတင်ပညာသင်ကြားခဲ့</span>
+                    <spam class="time">၂၀၁၄</spam>
+                </div>
+                <div class="event">
+                    <div class="circle"></div>
+                    <span class="text">University of Computer Studies တွင်စတင်ပညာသင်ကြားခဲ့</span>
+                    <spam class="time">၂၀၁၄</spam>
+                </div>
+                <div class="event">
+                    <div class="circle"></div>
+                    <span class="text">University of Computer Studies တွင်စတင်ပညာသင်ကြားခဲ့</span>
+                    <spam class="time">၂၀၁၄</spam>
+                </div>
+            </div>
         </section>
 
         <section id="skills" class="skills" data-section="skills">
@@ -103,11 +137,34 @@
         </section>
     </div>
     <!-- 
-        <div class="experience">
-            <h2>Experiences</h2>
-            <div class="exp"></div>
-            <div class="exp"></div>
-        </div> -->
+    <div class="experience">
+        <h2>Experiences</h2>
+        <div class="exp"></div>
+        <div class="exp"></div>
+    </div>
+     -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#descriptionBtn").click(function(){
+                $("#description").fadeIn(1500);
+                $("#skills").fadeOut(1500);
+                $("#education").fadeOut(1500);
+            });
+            $("#skillBtn").click(function(){
+                $("#skills").fadeIn(1500);
+                $("#description").fadeOut(1500);
+                $("#education").fadeOut(1500);
+            });
+            $("#educationBtn").click(function(){
+                $("#education").fadeIn(1500);
+                $("#skills").fadeOut(1500);
+                $("#description").fadeOut(1500);
+            });
+        });
+    </script>
 </body>
 
 </html>
