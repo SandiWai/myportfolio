@@ -9,6 +9,9 @@ header {
   width: 30%;
   height: 100vh;
   float: left; }
+  @media screen and (max-width: 900px) {
+    header {
+      width: 100%; } }
   header img {
     display: block;
     margin-top: 100px;
@@ -22,6 +25,9 @@ header {
     margin-top: 50px;
     text-align: center;
     color: #172135; }
+    @media screen and (max-width: 900px) {
+      header h1 {
+        font-size: 30px; } }
   header .contact {
     text-align: center; }
     header .contact i {
@@ -32,11 +38,13 @@ header {
       padding-top: 20px;
       text-align: center;
       margin-left: -30px; }
-  header .nav a, header .contact a {
+  header .nav a,
+  header .contact a {
     text-decoration: none;
     color: #3b474b;
     font-size: 18px;
-    border-bottom: 1px dashed #ad4040; }
+    border-bottom: 1px dashed #ad4040;
+    font-weight: bold; }
   header .contact a {
     border: none;
     color: #ad4040; }
@@ -55,6 +63,10 @@ h2 {
   float: left;
   overflow: scroll;
   scroll-behavior: smooth; }
+  @media screen and (max-width: 900px) {
+    .contents {
+      margin: auto;
+      width: 100%; } }
 
 .contents::-webkit-scrollbar {
   display: none; }
@@ -101,16 +113,16 @@ h2 {
     margin: 8px;
     padding: 10px;
     float: left;
-    width: 45%;
+    width: 90%;
     border-radius: 10px;
-    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.5); }
+    box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.5); }
     .education .edu i {
-      display: block;
+      display: inline;
       text-align: center;
-      font-size: 40px;
+      font-size: 15px;
       color: #ad4040; }
     .education .edu span {
-      display: block;
+      display: inline;
       font-size: 20px;
       padding-top: 30px; }
     .education .edu .pending,

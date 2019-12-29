@@ -24,9 +24,9 @@
             </a>
         </div>
         <ul>
-            <li class="nav"><a id="descriptionBtn" href="#">home</a></li>
-            <li class="nav"><a id="skillBtn" href="#">skills</a></li>
-            <li class="nav"><a id="educationBtn" href="#">education</a></li>
+            <li class="nav"><a id="descriptionBtn" href="#">အကြောင်းအရာ</a></li>
+            <li class="nav"><a id="skillBtn" href="#">နည်းပညာ</a></li>
+            <li class="nav"><a id="educationBtn" href="#">ပညာအရည်အချင်း</a></li>
         </ul>
     </header>
 
@@ -74,7 +74,7 @@
         </section>
 
         <section id="skills" class="skills" data-section="skills">
-            <h2>Skills</h2>
+            <h2>နည်းပညာ</h2>
             <div class="skill">
                 <i class="fab fa-html5"></i><span>HTML5</span>
             </div>
@@ -93,7 +93,7 @@
         </section>
 
         <section id="education" class="education" data-section="education">
-            <h2>Education & Certifications</h2>
+            <h2>ပညာအရည်အချင်း</h2>
             <div class="edu">
                 <i class="fas fa-graduation-cap"></i>
                 <span>B.C.Sc</span>
@@ -149,17 +149,17 @@
     <script>
         $(document).ready(function(){
             $("#descriptionBtn").click(function(){
-                $("#description").fadeIn(1500);
+                $("#description").fadeIn(2000);
                 $("#skills").fadeOut(1500);
                 $("#education").fadeOut(1500);
             });
             $("#skillBtn").click(function(){
-                $("#skills").fadeIn(1500);
+                $("#skills").fadeIn(2000);
                 $("#description").fadeOut(1500);
                 $("#education").fadeOut(1500);
             });
             $("#educationBtn").click(function(){
-                $("#education").fadeIn(1500);
+                $("#education").fadeIn(2000);
                 $("#skills").fadeOut(1500);
                 $("#description").fadeOut(1500);
             });
