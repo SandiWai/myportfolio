@@ -11,7 +11,8 @@ header {
   float: left; }
   @media screen and (max-width: 900px) {
     header {
-      width: 100%; } }
+      width: 100%;
+      height: auto; } }
   header img {
     display: block;
     margin-top: 100px;
